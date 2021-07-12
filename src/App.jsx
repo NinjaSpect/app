@@ -8,7 +8,6 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import Snackbar from '@material-ui/core/Snackbar';
-import TextField from '@material-ui/core';
 var userAnswer = undefined 
 
 function App() {
@@ -41,33 +40,16 @@ function App() {
   return (
     <React.Fragment>
       <nav>
-        <h1>
+        <div class="home">
           Ninja Spect App
-        </h1>
-      </nav>
-      <section>
-        <div class="content">
-          <h2>About</h2>
-          <p>
-            Ninja Spect's quizzes and lessons will be displayed on this website to provide the best experience possible. Ninja Spect Classes has a broad spectrum of activities and courses to complete.
-          </p>
-          <h2>Lessons</h2>
-          <p>
-            We aim to provide the best learning content possible with step-by-step explanations and engaging videos to inspire students to achieve excellence in all aspects of the curriculum.
-          </p>
-          <h2>Activities</h2>
-          <p>
-            At Ninja Spect we believe determination and perseverance can be attained through fun activities and gamified learning. Our specially designed graphical games are delineated to capture students' attention and chalenge them with motivational tasks.
-          </p>
-          <Button color="primary" variant="contained" disableElevation>
-            Primary
-          </Button>
-          <Button color="text" variant="text" disableElevation>
-            Text
-          </Button>
         </div>
-        <div class="image">
-          <img src="src/Favicon.svg" alt="" class="img"></img>
+      </nav>
+      <section class="nopad">
+        <div class="splash content">
+          <div class="hooker">Fun Learning</div>
+          <p>
+            Ninja Spect helps students achieve mastery in a range of subjects and become a knowledge ninja! View the world with new eyes and explore various courses and games.
+          </p>
         </div>
       </section>
       
@@ -80,7 +62,7 @@ function App() {
             <FormControlLabel value="d" control={<Radio />} label="Option 4" />
           </RadioGroup>
         </FormControl>
-        <Button className="adjust-child"color="primary" variant="contained" disableElevation type="submit">
+        <Button className="adjust-child"color="primary" variant="contained" disableElevation>
           Submit
         </Button>
       </div>
